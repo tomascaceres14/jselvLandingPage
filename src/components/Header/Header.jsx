@@ -2,10 +2,9 @@ import React from "react";
 import "./Header.css";
 
 const Header = () => {
-
   return (
-    <div className="header">
-      <nav className="header-nav">
+    <header className="header">
+      {/* <nav className="header-nav">
         <ul className="header-nav-ul">
           <li>
             <a
@@ -35,13 +34,19 @@ const Header = () => {
             </a>
           </li>
         </ul>
-      </nav>
-      <img
-        alt="logo"
-        src={require("../../images/logo.jpg")}
-        className="header-logo"
-      />
-      <nav className="header-nav">
+      </nav> */}
+      <div className="header-menu">
+        <img src={require("../../images/hamburger.png")} alt="toggle-menu" />
+      </div>
+      <div>
+        <img
+          alt="logo"
+          src={require("../../images/logo.jpg")}
+          className="header-logo"
+        />
+      </div>
+      <button className="header-button">Iniciar Sesion</button>
+      {/* <nav className="header-nav">
         <ul className="header-nav-ul">
           <li>
             <a
@@ -71,12 +76,8 @@ const Header = () => {
             </a>
           </li>
         </ul>
-      </nav>
-      {/* <div id="responsive-header" className="responsive-header">
-        <p>Juli Selvaggi Nutricion</p>
-        <img src={require("../../images/hamburger.png")} alt="toggle-menu" />
-      </div> */}
-    </div>
+      </nav> */}
+    </header>
   );
 };
 

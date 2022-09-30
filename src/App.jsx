@@ -1,14 +1,14 @@
 import "./App.css";
 import About from "./components/About/About";
 import Gallery from "./components/Gallery/Gallery";
-import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Gallery />
+      <Header />
       <About />
+      <Gallery />
     </div>
   );
 }

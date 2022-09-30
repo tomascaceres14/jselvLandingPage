@@ -1,33 +1,26 @@
 .image-bg {
-    background: url('../../images/maraton.jpg');
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: aqua;
-    padding: 300px;
+  background: url("../../images/juli2.jpg");
+  padding-top: 6em;
+  padding-bottom: 6em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
 }
 
-body, html {
-    height: 100px;
-  }
-
 .circle {
-    text-align: center;
-    position: absolute;
-    right: 12em;    
-    top: 18em;
-    color: rgb(255, 255, 255);
-    width: 350px;
-    height: 350px;
-    border: 5px solid pink;
-    border-radius: 50%;
-    background: white;
+  margin-right: 15em;
+  text-align: center;
+  width: 350px;
+  height: 350px;
+  border: 5px solid palevioletred;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.803);
 }
 
 .circle-content {
-    position: relative;
-    top: 108px;
-    color: rgb(247, 133, 152);
+  position: relative;
+  top: 108px;
+  color: palevioletred;
 }
