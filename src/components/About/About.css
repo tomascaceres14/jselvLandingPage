@@ -1,7 +1,7 @@
 .about {
   background-color: rgba(255, 232, 244, 0.4);
   margin: 4rem 4rem;
-  border-radius: 10px;
+  border-radius: 30px;
   /* display: flex; */
 }
 
@@ -21,16 +21,15 @@
 
 .image-bg2 img {
   width: 80%;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .about-desc {
-  background: rgb(254, 245, 247);
+  background: rgba(255, 255, 255, 0.841);
   display: flex;
   align-items: center;
-  width: 45%;
+  width: 50%;
   height: 40%;
   padding: 1%;
-  border-radius: 50px;
-  text-align: justify;
+  border-radius: 30px;
 }

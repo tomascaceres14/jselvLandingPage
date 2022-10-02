@@ -1,9 +1,11 @@
+import TemporaryDrawer from "../Drawer/Drawer";
 import React from "react";
 import "./Header.css";
 
 const Header = () => {
   return (
     <header className="header">
+      <TemporaryDrawer/>
       {/* <nav className="header-nav">
         <ul className="header-nav-ul">
           <li>
@@ -35,9 +37,6 @@ const Header = () => {
           </li>
         </ul>
       </nav> */}
-      <div className="header-menu">
-        <img src={require("../../images/hamburger.png")} alt="toggle-menu" />
-      </div>
       <div>
         <img
           alt="logo"

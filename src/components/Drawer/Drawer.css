@@ -1,0 +1,8 @@
+.header-menu {
+    border: 2px solid rgb(255, 174, 188);
+    background-color: rgb(255, 174, 188);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 9px;
+    transition: background-color 0.5s ease;
+}
