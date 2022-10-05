@@ -1,4 +1,4 @@
-import TemporaryDrawer from "../Drawer/Drawer";
+import TemporaryDrawer from "./Drawer/Drawer";
 import React from "react";
 import "./Header.css";
 
@@ -40,7 +40,7 @@ const Header = () => {
       <div>
         <img
           alt="logo"
-          src={require("../../images/logo.jpg")}
+          src={require("../../../images/logo.jpg")}
           className="header-logo"
         />
       </div>

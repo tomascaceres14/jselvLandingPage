@@ -15,17 +15,18 @@ import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import LoginIcon from "@mui/icons-material/Login";
 import RegisterIcon from "@mui/icons-material/Create";
 import "./Drawer.css";
+import { Link } from "@mui/material";
 
 const icons = [
-  { title: "Inicio", icon: InicioIcon },
-  { title: "Sobre mi", icon: SobreMiIcon },
-  { title: "Saca un turno!", icon: TurnoIcon },
-  { title: "Preguntas frecuentes", icon: QuestionMarkIcon },
+  { title: "Inicio", icon: InicioIcon, route: "/" },
+  { title: "Sobre mi", icon: SobreMiIcon, route: "/sobremi" },
+  { title: "Saca un turno!", icon: TurnoIcon, route: "/turnos" },
+  { title: "Preguntas frecuentes", icon: QuestionMarkIcon, route: "/faq" },
 ];
 
 const segundoMenu = [
-  { title: "Registrarse", icon: RegisterIcon },
-  { title: "Iniciar sesión", icon: LoginIcon },
+  { title: "Registrarse", icon: RegisterIcon, route: "/register" },
+  { title: "Iniciar sesión", icon: LoginIcon, route: "/login" },
 ];
 
 export default function TemporaryDrawer() {
@@ -70,12 +71,14 @@ export default function TemporaryDrawer() {
       <List>
         {segundoMenu.map((icon) => (
           <ListItem key={icon.title} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <icon.icon />
-              </ListItemIcon>
-              <ListItemText primary={icon.title} />
-            </ListItemButton>
+            <Link to={icon.route}>
+              <ListItemButton>
+                <ListItemIcon>
+                  <icon.icon />
+                </ListItemIcon>
+                <ListItemText primary={icon.title} />
+              </ListItemButton>
+            </Link>
           </ListItem>
         ))}
       </List>
@@ -87,7 +90,7 @@ export default function TemporaryDrawer() {
       <React.Fragment key={"left"}>
         <Button onClick={toggleDrawer("left", true)}>
           <img
-            src={require("../../images/hamburger.png")}
+            src={require("../../../../images/hamburger.png")}
             className="header-menu"
             alt="toggle-menu"
           />

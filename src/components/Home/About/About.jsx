@@ -7,7 +7,7 @@ const About = () => {
       <h1>Juli Selvaggi</h1>
       <section className="presentation">
         <div className="image-bg2">
-          <img src={require("../../images/juli1.jpg")} alt="presentation img" />
+          <img src={require("../../../images/juli1.jpg")} alt="presentation img" />
         </div>
         <article className="about-desc">
           <p>

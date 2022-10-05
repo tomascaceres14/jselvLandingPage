@@ -1,4 +1,5 @@
 body {
   background-image: url("./images/sky-bg.jpg");
   width: 100%;
+  background-attachment: fixed;
 }
