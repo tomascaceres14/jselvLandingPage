@@ -15,12 +15,12 @@ import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import LoginIcon from "@mui/icons-material/Login";
 import RegisterIcon from "@mui/icons-material/Create";
 import "./Drawer.css";
-import { Link } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const icons = [
   { title: "Inicio", icon: InicioIcon, route: "/" },
   { title: "Sobre mi", icon: SobreMiIcon, route: "/sobremi" },
-  { title: "Saca un turno!", icon: TurnoIcon, route: "/turnos" },
+  { title: "Saca un turno!", icon: TurnoIcon, route: "/reserva" },
   { title: "Preguntas frecuentes", icon: QuestionMarkIcon, route: "/faq" },
 ];
 
@@ -57,14 +57,16 @@ export default function TemporaryDrawer() {
     >
       <List>
         {icons.map((icon) => (
-          <ListItem key={icon.title} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <icon.icon />
-              </ListItemIcon>
-              <ListItemText primary={icon.title} />
-            </ListItemButton>
-          </ListItem>
+          <Link to={icon.route} key={icon.title}>
+            <ListItem disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  <icon.icon />
+                </ListItemIcon>
+                <ListItemText primary={icon.title} />
+              </ListItemButton>
+            </ListItem>
+          </Link>
         ))}
       </List>
       <Divider />
