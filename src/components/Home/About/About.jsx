@@ -30,7 +30,7 @@ const About = () => {
             que me capacito en alimentación vegetariana y vegana 💚 No milito,
             solo comparto sus beneficios, no me gusta imponer ✨ <br/>➡️ Me encanta
             cocinar y me dedique muchos años a la pastelería, también me formé
-            como maestra heladera (amo el helado, si) 🍰🎂 ⁉️ Por que toda esta
+            como maestra heladera (amo el helado, si) 🍰🎂 ⁉️<br/><br/> Por que toda esta
             intro? Pensé en hacerme un Instagram de nutrición en su momento y
             desistí de esa idea. Pues vengo a mostrarles lo que soy yo, lo que
             es mi vida (un CAOS organizado 😂), mis comidas, mis fines de

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import "./Reserva.css";
 
 const Reserva = () => {
@@ -14,16 +14,16 @@ const Reserva = () => {
 
     let message = `Hola%20Juli%21%20Mi%20nombre%20es%20${firstName}%20${lastName}%20y%20quisiera%20reservar%20un%20turno.`;
     let URL = `https://wa.me/543492383044?text=` + message;
-    
+
     window.open(URL, "_blank");
 
-    window.location.href = "/"
+    window.location.href = "/";
   };
 
   return (
     <div className="turno-container">
       <form className="turno-form" onSubmit={handleSubmit}>
-        <div className="input-form">
+        <div className="form-input">
           {/* <label htmlFor="nombre">Nombre:</label> */}
           <input
             type="text"
@@ -34,7 +34,7 @@ const Reserva = () => {
             required
           />
         </div>
-        <div className="input-form">
+        <div className="form-input">
           {/* <label htmlFor="apellido">Apellido:</label> */}
           <input
             type="text"
@@ -44,7 +44,7 @@ const Reserva = () => {
             required
           />
         </div>
-        <div className="input-form">
+        <div className="form-input">
           {/* <label htmlFor="email">Correo electronico:</label> */}
           <input
             type="email"
@@ -55,7 +55,9 @@ const Reserva = () => {
             required
           />
         </div>
-        <button type="submit">Reservar Turno</button>
+        <button type="submit" className="wpp-bttn">
+          <WhatsAppIcon className="wpp-logo" />
+        </button>
       </form>
     </div>
   );

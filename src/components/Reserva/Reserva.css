@@ -5,24 +5,41 @@
 }
 
 .turno-form {
-  background-color: rgba(255, 232, 244, 0.4);
+  background: rgba(255, 232, 244, 0.4);
   border-radius: 30px;
   display: flex;
   flex-direction: column;
-  padding: 5em 15em;
+  padding: 3% 15%;
   gap: 2em;
   font-size: 1.5rem;
 }
 
-.input-form {
+.form-input
+ {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
 }
 
-.input-form input {
-    padding: 1rem;
+.form-input input {
+    padding: 5%;
     border: none;
     font-size: 1.5rem;
     border-radius: 2px;
+}
+
+.wpp-bttn {
+  border: none;
+  padding: 2%;
+  cursor: pointer;
+  background: rgb(0, 179, 0);
+  transition: background 0.2s ease;
+}
+
+.wpp-bttn:hover {
+  background: green;
+}
+
+.wpp-logo {
+  color: white;
 }
