@@ -6,7 +6,7 @@ Objetivo: Crear un sistema para poder administrar turnos de pacientes y sus resp
 
 ### Front End
 
-- Landing page que de a conocer al profesional. ✔️ (Mejorable pero está)
+- Landing page basiquísimo que a conocer al profesional. ✔️ (Mejorable pero está)
 - Formulario que permita generar reserva de turno.
 - Register/Login.
 
