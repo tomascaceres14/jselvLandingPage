@@ -5,8 +5,8 @@ import Gallery from "./Gallery/Gallery";
 const Home = () => {
   return (
     <div>
-      <About />
       <Gallery />
+      <About />
     </div>
   );
 };

@@ -1,83 +1,24 @@
-import TemporaryDrawer from "./Drawer/Drawer";
-import React from "react";
-import "./Header.css";
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import Drawer from "./Drawer/Drawer";
+import "./Header.css"
 
-const Header = () => {
+export default function ButtonAppBar() {
   return (
-    <header className="header">
-      <TemporaryDrawer/>
-      {/* <nav className="header-nav">
-        <ul className="header-nav-ul">
-          <li>
-            <a
-              href="https://www.instagram.com/juliselvaggi.nutricion_/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              INICIO
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/juliselvaggi.nutricion_/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              SOBRE MI
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/juliselvaggi.nutricion_/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              PREGUNTAS FRECUENTES
-            </a>
-          </li>
-        </ul>
-      </nav> */}
-      <div>
-        <img
-          alt="logo"
-          src={require("../../../images/logo.jpg")}
-          className="header-logo"
-        />
-      </div>
-      <button className="header-button">Iniciar Sesion</button>
-      {/* <nav className="header-nav">
-        <ul className="header-nav-ul">
-          <li>
-            <a
-              href="https://www.instagram.com/juliselvaggi.nutricion_/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CONTACTO
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/juliselvaggi.nutricion_/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              RESERVA TU TURNO
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/juliselvaggi.nutricion_/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              INICIAR SESION
-            </a>
-          </li>
-        </ul>
-      </nav> */}
-    </header>
+    <Box sx={{ flexGrow: 0.5 }} className="header">
+      <AppBar position="static" className="header">
+        <Toolbar>
+          <Drawer sx={{ flexGrow: 1 }}/>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Juli Selvaggi Nutricion
+          </Typography>
+          <Button color="inherit">Login</Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
   );
-};
-
-export default Header;
+}
