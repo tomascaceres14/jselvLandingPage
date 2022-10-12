@@ -6,7 +6,7 @@ const Gallery = () => {
     <section className="image-bg">
       <div className="circle">
         <div className="circle-content">
-        <h1 className="title">Juli Selvaggi</h1>
+        <h1 className="title">Juliana Selvaggi</h1>
         <h3> Nutricionista deportiva</h3>
         </div>
       </div>

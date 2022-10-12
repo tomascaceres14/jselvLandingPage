@@ -1,0 +1,27 @@
+.turno-container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.turno-form {
+  background-color: rgba(255, 232, 244, 0.4);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 5em 15em;
+  gap: 2em;
+  font-size: 1.5rem;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.input-form input {
+    padding: 1rem;
+    border: none;
+    font-size: 1.5rem;
+}

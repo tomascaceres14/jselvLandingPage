@@ -1,5 +1,12 @@
 body {
-  background-image: url("./images/sky-bg.jpg");
+  background: rgb(37, 150, 190);
+  background: linear-gradient(
+    90deg,
+    rgba(37, 150, 190, 1) 0%,
+    rgba(37, 150, 190, 0.5) 15%,
+    rgba(37, 150, 190, 0.5018382352941176) 85%,
+    rgba(37, 150, 190, 1) 100%
+  );
   width: 100%;
   background-attachment: fixed;
 }
