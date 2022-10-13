@@ -72,16 +72,16 @@ export default function TemporaryDrawer() {
       <Divider />
       <List>
         {segundoMenu.map((icon) => (
-          <ListItem key={icon.title} disablePadding>
-            <Link to={icon.route}>
+          <Link to={icon.route} key={icon.title}>
+            <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
                   <icon.icon />
                 </ListItemIcon>
                 <ListItemText primary={icon.title} />
               </ListItemButton>
-            </Link>
-          </ListItem>
+            </ListItem>
+          </Link>
         ))}
       </List>
     </Box>

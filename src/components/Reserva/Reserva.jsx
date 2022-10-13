@@ -1,60 +1,75 @@
 import React from "react";
 import { useState } from "react";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import TextField from "@mui/material/TextField";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
+import dayjs from 'dayjs';
 import "./Reserva.css";
 
 const Reserva = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
+  const [date, setDate] = useState("");
 
   const handleSubmit = (event) => {
-    console.log("handleSubmit ran");
-    event.preventDefault(); // 👈️ prevent page refresh
+    event.preventDefault(); // prevent page refresh
 
-    let message = `Hola%20Juli%21%20Mi%20nombre%20es%20${firstName}%20${lastName}%20y%20quisiera%20reservar%20un%20turno.`;
-    let URL = `https://wa.me/543492383044?text=` + message;
+    const newDate = date.$d.toLocaleString(); // Formatting date to "DD/MM/YYYY HH:mm"
+    const message = `Hola+Juli%21+Mi+nombre+es+${firstName}+${lastName}+y+quisiera+reservar+un+turno+${newDate}`; // Create presonalized message
+    const URL = `https://wa.me/543492383044?text=` + message;
 
     window.open(URL, "_blank");
-
-    window.location.href = "/";
+    // window.location.href = "/";
   };
 
   return (
     <div className="turno-container">
       <form className="turno-form" onSubmit={handleSubmit}>
         <div className="form-input">
-          {/* <label htmlFor="nombre">Nombre:</label> */}
-          <input
-            type="text"
-            name="nombre"
-            placeholder="Nombre"
-            onChange={(event) => setFirstName(event.target.value)}
+          <TextField
+            label="Nombre"
+            variant="outlined"
             value={firstName}
+            onChange={(event) => setFirstName(event.target.value)}
             required
           />
         </div>
         <div className="form-input">
-          {/* <label htmlFor="apellido">Apellido:</label> */}
-          <input
-            type="text"
-            placeholder="Apellido"
-            onChange={(event) => setLastName(event.target.value)}
+          <TextField
+            label="Apellido"
+            variant="outlined"
             value={lastName}
+            onChange={(event) => setLastName(event.target.value)}
             required
           />
         </div>
         <div className="form-input">
-          {/* <label htmlFor="email">Correo electronico:</label> */}
-          <input
-            type="email"
-            name="email"
-            placeholder="turno@ejemplo.com"
+          <TextField
+            label="Correo Electronico"
+            variant="outlined"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             required
           />
         </div>
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <DateTimePicker
+            renderInput={(props) => <TextField {...props} />}
+            label="Fecha y hora deseada"
+            value={date}
+            inputFormat="DD/MM/YYYY HH:mm"
+            disablePast={true}
+            minDate={dayjs("2022-10-14")}
+            minTime={dayjs("2022-02-14T09:00")}
+            maxTime={dayjs("2022-02-14T20:30")}
+            onChange={(newValue) => {
+              setDate(newValue);
+            }}
+          />
+        </LocalizationProvider>
         <button type="submit" className="wpp-bttn">
           <WhatsAppIcon className="wpp-logo" />
         </button>
