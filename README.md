@@ -1,6 +1,7 @@
 # Sistema de nutricionista / Nutritionist system
 
 Objetivo: Crear un sistema para poder administrar turnos de pacientes y sus respectivos planes nutricionales en una base de datos conectada a una API REST de Java.
+
 Objective: Create a system to administrate patients and their respective nutritional plans in a database connected to a Java REST Api.
 
 ## Metas para el MVP / Goals for MVP:
