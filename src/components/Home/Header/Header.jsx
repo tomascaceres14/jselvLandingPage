@@ -36,7 +36,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#f14d59" }}>
+    <AppBar position="static" sx={{ backgroundColor: "#f14d59", position: "sticky", top: "0px" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
@@ -90,7 +90,9 @@ const ResponsiveAppBar = () => {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                   <a style={{color: "black"}}> {page}</a>
+                    <a style={{ color: "black" }} href="#about">
+                      {page}
+                    </a>
                   </Typography>
                 </MenuItem>
               ))}
@@ -130,7 +132,12 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-              <Button variant="text" sx={{backgroundColor: "black", color: "white" }}>Iniciar Sesion</Button>
+                <Button
+                  variant="text"
+                  sx={{ backgroundColor: "black", color: "white" }}
+                >
+                  Iniciar Sesion
+                </Button>
               </IconButton>
             </Tooltip>
             <Menu
