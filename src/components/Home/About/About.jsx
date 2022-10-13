@@ -6,14 +6,14 @@ const About = () => {
   return (
     <section id="about">
       <Title text={"Un poco sobre mi"} />
-      <section className="presentation about">
+      <article className="presentation about">
         <div className="image-bg2">
           <img
             src={require("../../../images/juli1.jpg")}
             alt="presentation img"
           />
         </div>
-        <article className="about-desc">
+        <aside className="about-desc">
           <p>
             ➡️Mi nombre es Juliana (la primera vez nadie le pega suelo ser Julia
             o Julieta), me dicen Juli o Juliselva🙃 <br />
@@ -53,8 +53,8 @@ const About = () => {
             Espero no aburrirlos, y que sea un camino en el que pueda recorrer
             siempre COMPARTIENDO 🌈 Nutrí Juli 👩🏽‍⚕️
           </p>
-        </article>
-      </section>
+        </aside>
+      </article>
     </section>
   );
 };

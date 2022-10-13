@@ -18,10 +18,15 @@ import "./Drawer.css";
 import { Link } from "react-router-dom";
 
 const icons = [
-  { title: "Inicio", icon: InicioIcon, route: "/" },
-  { title: "Sobre mi", icon: SobreMiIcon, route: "/sobremi" },
-  { title: "Saca un turno!", icon: TurnoIcon, route: "/reserva" },
-  { title: "Preguntas frecuentes", icon: QuestionMarkIcon, route: "/faq" },
+  { title: "Inicio", icon: InicioIcon, href: "#" },
+  { title: "Sobre mi", icon: SobreMiIcon, href: "#about" },
+  {
+    title: "Preguntas frecuentes",
+    icon: QuestionMarkIcon,
+    
+    href: "#faq",
+  },
+  { title: "Saca un turno!", icon: TurnoIcon, route: "/reserva", href: "#" },
 ];
 
 const segundoMenu = [
@@ -57,15 +62,17 @@ export default function TemporaryDrawer() {
     >
       <List>
         {icons.map((icon) => (
-          <a to={icon.route} key={icon.title} href={"#about"}>
-            <ListItem disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  <icon.icon />
-                </ListItemIcon>
-                <ListItemText primary={icon.title} />
-              </ListItemButton>
-            </ListItem>
+          <a to={icon.route} key={icon.title} href={icon.href}>
+            <Link to={icon.route}>
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>
+                    <icon.icon />
+                  </ListItemIcon>
+                  <ListItemText primary={icon.title} />
+                </ListItemButton>
+              </ListItem>
+            </Link>
           </a>
         ))}
       </List>
@@ -88,7 +95,7 @@ export default function TemporaryDrawer() {
   );
 
   return (
-    <div>
+    <nav>
       <React.Fragment key={"left"}>
         <Button onClick={toggleDrawer("left", true)}>
           <img
@@ -105,6 +112,6 @@ export default function TemporaryDrawer() {
           {list("left")}
         </Drawer>
       </React.Fragment>
-    </div>
+    </nav>
   );
 }

@@ -6,7 +6,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
 import dayjs from 'dayjs';
-import "./Reserva.css";
+import "./Appointment.css";
 
 const Reserva = () => {
   const [firstName, setFirstName] = useState("");
