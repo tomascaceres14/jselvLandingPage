@@ -38,7 +38,7 @@ h2:after {
   width: 50%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   h2 {
     font-size: large;
     color: #f14d59;
