@@ -62,6 +62,7 @@ h2:after {
 
   .about article {
     flex-direction: column;
+    padding: 20% 0px;
   }
   .about p {
     width: 95%;
