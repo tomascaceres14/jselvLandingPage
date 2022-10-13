@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
-  "homepage": "https://tomascaceres14.github.io/",
+  "homepage": "https://tomascaceres14.github.io/jselvWebApp",
   "private": true,
   "dependencies": {
     "@date-io/date-fns": "^1.3.13",
