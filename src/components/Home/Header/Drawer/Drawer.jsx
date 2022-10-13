@@ -57,7 +57,7 @@ export default function TemporaryDrawer() {
     >
       <List>
         {icons.map((icon) => (
-          <Link to={icon.route} key={icon.title}>
+          <a to={icon.route} key={icon.title} href={"#about"}>
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -66,7 +66,7 @@ export default function TemporaryDrawer() {
                 <ListItemText primary={icon.title} />
               </ListItemButton>
             </ListItem>
-          </Link>
+          </a>
         ))}
       </List>
       <Divider />

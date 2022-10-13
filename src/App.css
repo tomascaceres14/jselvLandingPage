@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: rgb(37, 150, 190);
   background: linear-gradient(
