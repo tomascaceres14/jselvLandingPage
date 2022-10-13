@@ -5,7 +5,7 @@ import TextField from "@mui/material/TextField";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
-import dayjs from 'dayjs';
+import dayjs from "dayjs";
 import "./Appointment.css";
 
 const Reserva = () => {
@@ -18,7 +18,7 @@ const Reserva = () => {
     event.preventDefault(); // prevent page refresh
 
     const newDate = date.$d.toLocaleString(); // Formatting date to "DD/MM/YYYY HH:mm"
-    const message = `Hola+Juli%21+Mi+nombre+es+${firstName}+${lastName}+y+quisiera+reservar+un+turno+${newDate}`; // Create presonalized message
+    const message = `Hola+Juli%21+Mi+nombre+es+${firstName}+${lastName}+y+quisiera+reservar+un+turno+para+el+${newDate}`; // Create presonalized message
     const URL = `https://wa.me/543492383044?text=` + message;
 
     window.open(URL, "_blank");
@@ -27,6 +27,7 @@ const Reserva = () => {
 
   return (
     <div className="turno-container">
+      <h2 className="h2-title">Reserva tu turno!</h2>
       <form className="turno-form" onSubmit={handleSubmit}>
         <div className="form-input">
           <TextField

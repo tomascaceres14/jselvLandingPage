@@ -3,15 +3,13 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-    <section className="image-bg">
-      <figure className="circle">
-        <div className="circle-content">
-        <h1 className="title">Juliana Selvaggi</h1>
-        <h3> Nutricionista deportiva</h3>
-        </div>
-      </figure>
+    <section className="hero">
+      <article>
+        <h1>Juliana Selvaggi Nutricionista</h1>
+        <span>Potenciamos tu rendimiento deportivo de manera saludable.</span>
+      </article>
     </section>
   );
-}; 
+};
 
 export default Hero;

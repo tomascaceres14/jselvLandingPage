@@ -12,9 +12,9 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import "./Header";
+import "./Header.css";
 
-const pages = ["Products", "Pricing", "Blog"];
+const pages = ["Ofertas", "¿Quien soy?", "Contacto"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = () => {
@@ -37,7 +37,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static" sx={{backgroundColor: "#f14d59"}}>
+    <AppBar position="static" sx={{ backgroundColor: "#f14d59" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
@@ -90,7 +90,9 @@ const ResponsiveAppBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center">
+                    <a href="#about">{page}</a>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -121,7 +123,7 @@ const ResponsiveAppBar = () => {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                <a href="#about">{page}</a>
               </Button>
             ))}
           </Box>

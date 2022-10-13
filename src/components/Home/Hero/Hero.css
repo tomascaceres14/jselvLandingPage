@@ -1,27 +1,13 @@
-.image-bg {
-  margin-top: 1rem;
-  background: url("../../../images/juli2.jpg");
-  padding-top: 6em;
-  padding-bottom: 6em;
+.hero {
+  background-image: url("../../../images/juli2.jpg");
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: flex-end;
 }
 
-.circle {
-  margin-right: 15em;
+.hero article {
   text-align: center;
-  width: 350px;
-  height: 350px;
-  border: 5px solid #f14d59;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.803);
-}
-
-.circle-content {
-  position: relative;
-  top: 108px;
-  color: #f14d59;
+  font-size: 32px;
+  background: rgba(0, 0, 0, 0.356);
+  padding: 20%;
+  color: rgb(237, 237, 237);
 }
