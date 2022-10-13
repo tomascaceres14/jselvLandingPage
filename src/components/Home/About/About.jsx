@@ -4,7 +4,7 @@ import "./About.css";
 const About = () => {
   return (
     <section id="about" className="about">
-      <h2>Un poco sobre mi</h2>
+      <h2>Sobre mi</h2>
       <article>
         <img
           src={require("../../../images/juli1.jpg")}

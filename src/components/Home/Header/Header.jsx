@@ -55,7 +55,7 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            J.S.
+            JS
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -90,7 +90,7 @@ const ResponsiveAppBar = () => {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    <a href="#about">{page}</a>
+                   <a style={{color: "black"}}> {page}</a>
                   </Typography>
                 </MenuItem>
               ))}
@@ -113,14 +113,14 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            LOGO
+            JS
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "black", display: "block" }}
               >
                 <a href="#about">{page}</a>
               </Button>
@@ -130,7 +130,7 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-              <Button variant="text" sx={{backgroundColor: "black", color: "white" }}>Contained</Button>
+              <Button variant="text" sx={{backgroundColor: "black", color: "white" }}>Iniciar Sesion</Button>
               </IconButton>
             </Tooltip>
             <Menu

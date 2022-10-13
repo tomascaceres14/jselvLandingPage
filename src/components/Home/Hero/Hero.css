@@ -7,7 +7,7 @@
 .hero article {
   text-align: center;
   font-size: 32px;
-  background: rgba(0, 0, 0, 0.356);
+  background: rgba(0, 0, 0, 0.5);
   padding: 20%;
   color: rgb(237, 237, 237);
 }
