@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jselvWebApp/static/css/main.d77926bb.css",
-    "main.js": "/jselvWebApp/static/js/main.78240a8e.js",
-    "static/media/juli2.jpg": "/jselvWebApp/static/media/juli2.9dbabdbb6f2a67bb4792.jpg",
-    "static/media/juli1.jpg": "/jselvWebApp/static/media/juli1.3e8536c348454587574b.jpg",
-    "index.html": "/jselvWebApp/index.html",
-    "main.d77926bb.css.map": "/jselvWebApp/static/css/main.d77926bb.css.map",
-    "main.78240a8e.js.map": "/jselvWebApp/static/js/main.78240a8e.js.map"
+    "main.css": "/static/css/main.9d3b7dd1.css",
+    "main.js": "/static/js/main.06078170.js",
+    "static/media/juli2.jpg": "/static/media/juli2.9dbabdbb6f2a67bb4792.jpg",
+    "static/media/juli1.jpg": "/static/media/juli1.3e8536c348454587574b.jpg",
+    "index.html": "/index.html",
+    "main.9d3b7dd1.css.map": "/static/css/main.9d3b7dd1.css.map",
+    "main.06078170.js.map": "/static/js/main.06078170.js.map"
   },
   "entrypoints": [
-    "static/css/main.d77926bb.css",
-    "static/js/main.78240a8e.js"
+    "static/css/main.9d3b7dd1.css",
+    "static/js/main.06078170.js"
   ]
 }
