@@ -15,7 +15,7 @@
   text-align: center;
   width: 350px;
   height: 350px;
-  border: 5px solid palevioletred;
+  border: 5px solid #f14d59;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.803);
 }
@@ -23,5 +23,5 @@
 .circle-content {
   position: relative;
   top: 108px;
-  color: palevioletred;
+  color: #f14d59;
 }
