@@ -7,8 +7,7 @@ Objective: Create a system to administrate patients and their respective nutriti
 ## Metas para el MVP / Goals for MVP:
 
 ### Front End
-
-
+<br/>
 - Landing page basiquísimo que a conocer al profesional. ✔️ (Necesita mejoras pero existe)
 - Super basic landing page that gives information about the professional. ✔️ (Needs rework but exists)
 
