@@ -35,3 +35,10 @@
 .wpp-logo {
   color: #f14d59;
 }
+
+@media (max-width: 900px) {
+  .turno-form {
+    width: 100%;
+    padding: 1rem;
+  }
+}

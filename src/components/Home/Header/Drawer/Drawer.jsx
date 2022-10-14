@@ -14,6 +14,7 @@ import TurnoIcon from "@mui/icons-material/HourglassTop";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import LoginIcon from "@mui/icons-material/Login";
 import RegisterIcon from "@mui/icons-material/Create";
+import MenuIcon from "@mui/icons-material/Menu";
 import "./Drawer.css";
 import { Link } from "react-router-dom";
 
@@ -23,10 +24,10 @@ const icons = [
   {
     title: "Preguntas frecuentes",
     icon: QuestionMarkIcon,
-    
+
     href: "#faq",
   },
-  { title: "Saca un turno!", icon: TurnoIcon, route: "/reserva", href: "#" },
+  { title: "Saca un turno!", icon: TurnoIcon, route: "/reserva", href: "#appointment" },
 ];
 
 const segundoMenu = [
@@ -55,7 +56,9 @@ export default function TemporaryDrawer() {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
+      sx={{
+        width: 250,
+      }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
@@ -63,29 +66,30 @@ export default function TemporaryDrawer() {
       <List>
         {icons.map((icon) => (
           <a to={icon.route} key={icon.title} href={icon.href}>
-            <Link to={icon.route}>
               <ListItem disablePadding>
                 <ListItemButton>
-                  <ListItemIcon>
+                  <ListItemIcon sx={{ color: "#f14d59" }}>
                     <icon.icon />
                   </ListItemIcon>
-                  <ListItemText primary={icon.title} />
+                  <ListItemText
+                    primary={icon.title}
+                    sx={{ color: "#f14d59", fontWeight: "700" }}
+                  />
                 </ListItemButton>
               </ListItem>
-            </Link>
           </a>
         ))}
       </List>
-      <Divider />
+      <Divider sx={{ backgroundColor: "#f14d5848" }} />
       <List>
         {segundoMenu.map((icon) => (
           <Link to={icon.route} key={icon.title}>
             <ListItem disablePadding>
               <ListItemButton>
-                <ListItemIcon>
+                <ListItemIcon sx={{ color: "#f14d59" }}>
                   <icon.icon />
                 </ListItemIcon>
-                <ListItemText primary={icon.title} />
+                <ListItemText primary={icon.title} sx={{ color: "#f14d59" }} />
               </ListItemButton>
             </ListItem>
           </Link>
@@ -98,11 +102,7 @@ export default function TemporaryDrawer() {
     <nav>
       <React.Fragment key={"left"}>
         <Button onClick={toggleDrawer("left", true)}>
-          <img
-            src={require("../../../../images/hamburger.png")}
-            className="header-menu"
-            alt="toggle-menu"
-          />
+          <MenuIcon sx={{ color: "white" }} />
         </Button>
         <Drawer
           anchor={"left"}

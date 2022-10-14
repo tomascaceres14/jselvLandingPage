@@ -2,7 +2,7 @@ img {
   max-height: 100%;
 }
 
-.logo{
+.logo {
   width: 7rem;
   display: flex;
 }
@@ -27,23 +27,6 @@ a {
 .header-logo {
   justify-self: center;
   width: 80px;
-}
-
-.header-button {
-  padding: 0.5rem;
-  border: 2px solid rgb(255, 174, 188);
-  background-color: rgb(255, 174, 188);
-  border-radius: 5px;
-  cursor: pointer;
-  color: rgb(255, 255, 255);
-  font-weight: 700;
-  transition: color 0.5s ease;
-  transition: background-color 0.5s ease;
-}
-
-.header-button:hover {
-  color: rgb(236, 234, 234);
-  background-color: rgba(255, 174, 187, 0.593);
 }
 
 .header-nav {
@@ -71,7 +54,11 @@ a {
 }
 
 @media (max-width: 900px) {
-  /* .logo{
+  .logo {
+    width: 3rem;
+  }
+
+  .header-button {
     display: none;
-  } */
+  }
 }
