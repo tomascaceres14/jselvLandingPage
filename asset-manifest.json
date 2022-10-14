@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/jselvWebApp/static/css/main.ba696507.css",
-    "main.js": "/jselvWebApp/static/js/main.3e5b8eb5.js",
+    "main.css": "/jselvWebApp/static/css/main.2b3cb489.css",
+    "main.js": "/jselvWebApp/static/js/main.6613a17a.js",
     "static/media/hero-banner.jpg": "/jselvWebApp/static/media/hero-banner.9dbabdbb6f2a67bb4792.jpg",
     "static/media/about-me.jpg": "/jselvWebApp/static/media/about-me.3e8536c348454587574b.jpg",
     "static/media/logo2.jpg": "/jselvWebApp/static/media/logo2.1dc58757e0bf2af70963.jpg",
     "index.html": "/jselvWebApp/index.html",
-    "main.ba696507.css.map": "/jselvWebApp/static/css/main.ba696507.css.map",
-    "main.3e5b8eb5.js.map": "/jselvWebApp/static/js/main.3e5b8eb5.js.map"
+    "main.2b3cb489.css.map": "/jselvWebApp/static/css/main.2b3cb489.css.map",
+    "main.6613a17a.js.map": "/jselvWebApp/static/js/main.6613a17a.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba696507.css",
-    "static/js/main.3e5b8eb5.js"
+    "static/css/main.2b3cb489.css",
+    "static/js/main.6613a17a.js"
   ]
 }
