@@ -2,6 +2,11 @@ img {
   max-height: 100%;
 }
 
+.logo{
+  width: 7rem;
+  display: flex;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -11,7 +16,7 @@ a {
   position: sticky;
   top: 0px;
   display: flex;
-  background-color: #f14d59;
+  background-color: black;
   justify-content: center;
 }
 
@@ -63,4 +68,10 @@ a {
 
 .header-nav li:hover {
   background-color: rgba(255, 56, 156, 0.088);
+}
+
+@media (max-width: 900px) {
+  /* .logo{
+    display: none;
+  } */
 }

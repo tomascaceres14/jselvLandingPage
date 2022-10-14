@@ -10,10 +10,13 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import "./Header.css";
 
-const pages = ["Ofertas", "¿Quien soy?", "Contacto"];
+const pages = [
+  { name: "Ofertas", href: "#" },
+  { name: "¿Quien soy?", href: "#about" },
+  { name: "Contacto", href: "#appointment" },
+];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = () => {
@@ -36,10 +39,12 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#f14d59", position: "sticky", top: "0px" }}>
+    <AppBar
+      position="static"
+      sx={{ backgroundColor: "black", position: "sticky", top: "0px" }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -47,7 +52,7 @@ const ResponsiveAppBar = () => {
             href="/"
             sx={{
               mr: 2,
-              display: { xs: "none", md: "flex" },
+              display: { xs: "none", md: "flex", color: "#f14d59" },
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
@@ -55,7 +60,11 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            JS
+            <img
+              src={require("../../../images/logo2.jpg")}
+              className="logo"
+              alt="logo"
+            />
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -88,17 +97,16 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    <a style={{ color: "black" }} href="#about">
-                      {page}
+                    <a style={{ color: "black" }} href={page.href}>
+                      {page.name}
                     </a>
                   </Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -111,20 +119,36 @@ const ResponsiveAppBar = () => {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
+              color: "#f14d59",
               textDecoration: "none",
             }}
           >
-            JS
+            <img
+              src={require("../../../images/logo2.jpg")}
+              className="logo"
+              alt="logo"
+            />
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              gap: "1rem",
+            }}
+          >
             {pages.map((page) => (
               <Button
-                key={page}
+                key={page.name}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "black", display: "block" }}
+                sx={{
+                  my: 2,
+                  color: "black",
+                  display: "block",
+                  borderBottom: "1px solid #f14d59",
+                  borderRadius: "0px",
+                }}
               >
-                <a href="#about">{page}</a>
+                <a href={page.href}>{page.name}</a>
               </Button>
             ))}
           </Box>
@@ -134,7 +158,12 @@ const ResponsiveAppBar = () => {
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Button
                   variant="text"
-                  sx={{ backgroundColor: "black", color: "white" }}
+                  sx={{
+                    backgroundColor: "black",
+                    color: "white",
+                    borderBottom: "1px solid #f14d59",
+                    borderRadius: "0px",
+                  }}
                 >
                   Iniciar Sesion
                 </Button>

@@ -7,7 +7,7 @@ const About = () => {
       <h2>Sobre mi</h2>
       <article>
         <img
-          src={require("../../../images/juli1.jpg")}
+          src={require("../../../images/about-me.jpg")}
           alt="presentation img"
         />
         <p>

@@ -27,6 +27,7 @@ h2:after {
   justify-content: center;
   gap: 3rem;
   align-items: center;
+  padding: 2rem 0rem;
 }
 
 .about img {

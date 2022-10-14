@@ -24,7 +24,7 @@
   border: none;
   padding: 2%;
   cursor: pointer;
-  background: #f14d59;
+  background: black;
   transition: background 0.2s ease;
 }
 
@@ -33,5 +33,5 @@
 }
 
 .wpp-logo {
-  color: white;
+  color: #f14d59;
 }

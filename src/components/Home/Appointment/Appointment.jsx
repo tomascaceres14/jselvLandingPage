@@ -26,7 +26,7 @@ const Reserva = () => {
   };
 
   return (
-    <div className="turno-container">
+    <div className="turno-container" id="appointment">
       <h2 className="h2-title">Reserva tu turno!</h2>
       <form className="turno-form" onSubmit={handleSubmit}>
         <div className="form-input">
