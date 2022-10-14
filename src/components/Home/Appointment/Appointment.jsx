@@ -64,7 +64,7 @@ const Reserva = () => {
             inputFormat="DD/MM/YYYY HH:mm"
             disablePast={true}
             minDate={dayjs("2022-10-14")}
-            minTime={dayjs("2022-02-14T09:00")}
+            minTime={dayjs("2022-02-14T08:00")}
             maxTime={dayjs("2022-02-14T20:30")}
             onChange={(newValue) => {
               setDate(newValue);
