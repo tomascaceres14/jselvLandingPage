@@ -1,5 +1,5 @@
 h2 {
-  font-size: xx-large;
+  font-size: 3rem;
   color: #f14d59;
   padding: 8rem;
   width: 70%;
@@ -7,6 +7,7 @@ h2 {
   overflow: hidden;
   text-align: center;
   font-weight: 500;
+  font-family: 'Style Script', cursive;
 }
 h2:before,
 h2:after {
@@ -19,6 +20,10 @@ h2:after {
 }
 h2:after {
   margin: 0 -55% 0 0.5em;
+}
+
+.about{
+  font-family: 'Roboto', sans-serif;
 }
 
 .about article {
@@ -41,7 +46,7 @@ h2:after {
 
 @media (max-width: 1000px) {
   h2 {
-    font-size: large;
+    font-size: 2rem;
     color: #f14d59;
     padding: 4rem 0rem;
     width: 70%;

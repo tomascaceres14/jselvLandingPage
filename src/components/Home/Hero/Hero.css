@@ -2,6 +2,7 @@
   background-image: url("../../../images/hero-banner.jpg");
   background-position: center;
   background-size: cover;
+  font-family: 'Oswald', sans-serif;
 }
 
 .hero article {
