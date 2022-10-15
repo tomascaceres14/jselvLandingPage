@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/jselvWebApp/static/css/main.e54e2fda.css",
-    "main.js": "/jselvWebApp/static/js/main.6613a17a.js",
+    "main.css": "/jselvWebApp/static/css/main.11c234db.css",
+    "main.js": "/jselvWebApp/static/js/main.158bf9ac.js",
+    "static/media/food-banner.jpg": "/jselvWebApp/static/media/food-banner.12f07e8c659578596c1c.jpg",
     "static/media/hero-banner.jpg": "/jselvWebApp/static/media/hero-banner.9dbabdbb6f2a67bb4792.jpg",
     "static/media/about-me.jpg": "/jselvWebApp/static/media/about-me.3e8536c348454587574b.jpg",
     "static/media/logo2.jpg": "/jselvWebApp/static/media/logo2.1dc58757e0bf2af70963.jpg",
+    "static/media/vikingos-logo.jpg": "/jselvWebApp/static/media/vikingos-logo.10292d3368cc382667c0.jpg",
+    "static/media/mr-logo.jpg": "/jselvWebApp/static/media/mr-logo.3be62d6d57139832bad3.jpg",
     "index.html": "/jselvWebApp/index.html",
-    "main.e54e2fda.css.map": "/jselvWebApp/static/css/main.e54e2fda.css.map",
-    "main.6613a17a.js.map": "/jselvWebApp/static/js/main.6613a17a.js.map"
+    "main.11c234db.css.map": "/jselvWebApp/static/css/main.11c234db.css.map",
+    "main.158bf9ac.js.map": "/jselvWebApp/static/js/main.158bf9ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.e54e2fda.css",
-    "static/js/main.6613a17a.js"
+    "static/css/main.11c234db.css",
+    "static/js/main.158bf9ac.js"
   ]
 }
