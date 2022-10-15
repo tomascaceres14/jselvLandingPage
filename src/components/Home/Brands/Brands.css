@@ -14,28 +14,34 @@
 }
 
 .brands-container img {
-    height: 6rem;
-    border-radius: 50px;
+  height: 6rem;
+  border-radius: 50px;
 }
 
 .banner-logos {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
-    background: rgba(0, 0, 0, 0.137);
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgba(0, 0, 0, 0.137);
 }
 
 @media (max-width: 900px) {
+  .brands-container img {
+    height: 4rem;
+    border-radius: 50px;
+  }
 
-    .banner-logos {
-        flex-wrap: wrap;
-        overflow: hidden;
-    }
+  .banner-logos {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+  }
+  .logos {
+    display: flex;
+    justify-content: center;
+  }
+}
 
-    .brands-container img {
-        height: 4rem;
-        border-radius: 50px;
-    }
+@media (max-width: 600px) {
 }

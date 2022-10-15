@@ -12,12 +12,17 @@ import vikingos from "../../../images/vikingos-logo.jpg";
 const logos = [flaming, granger, los40, mr, cantabria, mas, sic, vikingos];
 
 const Brands = () => {
+  let gridCounter = 0;
   return (
     <section className="brands-container">
       <article className="banner-logos">
-            {logos.map((logo) => {
-              return <img src={logo} />;
-            })}
+        {logos.map((logo) => {
+          return (
+            <div className="logos">
+              <img src={logo} className={"logo" + gridCounter++} />
+            </div>
+          );
+        })}
       </article>
     </section>
   );
