@@ -27,7 +27,7 @@ h2:after {
 }
 
 .about article {
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
   display: flex;
   justify-content: center;
   gap: 3rem;
@@ -63,12 +63,11 @@ h2:after {
   }
 
   .about img {
-    width: 100%;
+    width: 90%;
   }
 
   .about article {
     flex-direction: column;
-    padding: 20% 0px;
   }
   .about p {
     width: 95%;

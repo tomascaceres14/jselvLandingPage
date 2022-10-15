@@ -2,14 +2,13 @@
   background-image: url("../../../images/hero-banner.jpg");
   background-position: center;
   background-size: cover;
-  font-family: 'Oswald', sans-serif;
 }
 
 .hero article {
   text-align: center;
   font-size: 32px;
   background: rgba(0, 0, 0, 0.5);
-  padding: 20%;
+  padding: 16%;
   color: rgb(237, 237, 237);
 }
 
