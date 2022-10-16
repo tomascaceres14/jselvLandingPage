@@ -14,13 +14,9 @@ const ThreeLegs = () => {
       {legs.map((leg) => {
         return (
           <article className="legs">
-            <RestaurantIcon />
-              <h3>Titulo de pata</h3>
-              <p>
-                Una no tan larga descripcion de no mas de dos oraciones en la
-                cual hablamos sobre cual es el objetivo que se plantea y el
-                enfoque que da el profesional
-              </p>
+            <{leg.icon} />
+              <h3>{leg.title}</h3>
+              <p>{leg.description}</p>
           </article>
         );
       })}
