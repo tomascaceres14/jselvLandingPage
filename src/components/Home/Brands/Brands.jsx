@@ -9,7 +9,16 @@ import mr from "../../../images/mr-logo.jpg";
 import sic from "../../../images/sic-logo.jpg";
 import vikingos from "../../../images/vikingos-logo.jpg";
 
-const logos = [flaming, granger, los40, mr, cantabria, mas, sic, vikingos];
+const logos = [
+  { name: flaming, href: "https://www.instagram.com/flaming_oficial/" },
+  { name: granger, href: "https://www.instagram.com/grangernutricion/" },
+  { name: los40, href: "https://www.instagram.com/los40ar/" },
+  { name: mr, href: "https://www.instagram.com/mrsuplementosdeportivos/" },
+  { name: cantabria, href: "https://www.instagram.com/heladoscantabria/" },
+  { name: mas, href: "https://www.instagram.com/mas.gimnasio/" },
+  { name: sic, href: "https://www.instagram.com/siccelulares/" },
+  { name: vikingos, href: "https://www.instagram.com/vikingos_running_spirit/" },
+];
 
 const Brands = () => {
   let gridCounter = 0;
@@ -19,7 +28,9 @@ const Brands = () => {
         {logos.map((logo) => {
           return (
             <div className="logos">
-              <img src={logo} className={"logo" + gridCounter++} />
+              <a href={logo.href} target="_blank" rel="noreferrer">
+                <img src={logo.name} alt={logo.name} className={"logo" + gridCounter++} />
+              </a>
             </div>
           );
         })}
