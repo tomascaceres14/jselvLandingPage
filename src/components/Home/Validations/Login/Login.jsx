@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
-import "../Validations.css"
+import "../Validations.css";
 
-const Login = () => {
+const Login = ({ toggle }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   return (
-    <div>
-      <form>
+    <section id="login">
+      <form className="validation-form">
         <div className="form-input">
           <TextField
-            label="Email"
+            label="Correo Electronico"
             variant="outlined"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
@@ -26,11 +26,13 @@ const Login = () => {
             required
           />
         </div>
-        <button type="submit">
-          Iniciar Sesion
+        <button type="submit" className="submit-bttn">
+          <strong>Iniciar Sesion</strong>
         </button>
+        <hr className="hr-validations" />
+        {toggle}
       </form>
-    </div>
+    </section>
   );
 };
 

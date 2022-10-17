@@ -1,15 +1,15 @@
 import { TextField } from "@mui/material";
 import React, { useState } from "react";
 
-const Register = () => {
+const Register = ({ toggle }) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [password2, setPassword2] = useState("");
   return (
-    <div>
-      <form>
+    <div id="register">
+      <form className="validation-form">
         <div className="form-input">
           <TextField
             label="Nombre"
@@ -55,7 +55,11 @@ const Register = () => {
             required
           />
         </div>
-        <button type="submit">Registrarse</button>
+        <button type="submit" className="submit-bttn">
+          <strong>Registrarse</strong>
+        </button>
+        <hr className="hr-validations" />
+        {toggle}
       </form>
     </div>
   );

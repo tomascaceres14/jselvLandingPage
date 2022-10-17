@@ -26,7 +26,7 @@ const Reserva = () => {
   };
 
   return (
-    <div className="turno-container" id="appointment">
+    <section className="turno-container" id="appointment">
       <h2 className="h2-title">Reserva tu turno!</h2>
       <form className="turno-form" onSubmit={handleSubmit}>
         <div className="form-input">
@@ -71,11 +71,11 @@ const Reserva = () => {
             }}
           />
         </LocalizationProvider>
-        <button type="submit" className="wpp-bttn">
+        <button type="submit" className="submit-bttn">
           <WhatsAppIcon className="wpp-logo" />
         </button>
       </form>
-    </div>
+    </section>
   );
 };
 

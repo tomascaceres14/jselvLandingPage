@@ -20,7 +20,7 @@
   gap: 0.5em;
 }
 
-.wpp-bttn {
+.submit-bttn {
   border: none;
   padding: 2%;
   cursor: pointer;
@@ -28,11 +28,11 @@
   transition: background 0.2s ease;
 }
 
-.wpp-bttn:hover {
+.submit-bttn:hover {
   background: #ef8088;
 }
 
-.wpp-logo {
+.submit-logo {
   color: black;
 }
 
