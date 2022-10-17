@@ -17,9 +17,22 @@ const pages = [
   { name: "¿Quien soy?", href: "#about" },
   { name: "Contacto", href: "#appointment" },
 ];
+
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-7rem";
+  }
+  prevScrollpos = currentScrollPos;
+};
+
 const ResponsiveAppBar = () => {
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -37,8 +50,13 @@ const ResponsiveAppBar = () => {
 
   return (
     <AppBar
-      position="static"
-      sx={{ backgroundColor: "black", position: "sticky", top: "0px" }}
+      sx={{
+        backgroundColor: "black",
+        position: "sticky",
+        top: "0px",
+        transition: "top 0.3s",
+      }}
+      id="navbar"
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
