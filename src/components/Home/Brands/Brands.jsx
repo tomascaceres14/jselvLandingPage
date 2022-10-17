@@ -30,7 +30,7 @@ const Brands = () => {
       <article className="banner-logos">
         {logos.map((logo) => {
           return (
-            <div className="logos">
+            <div className="logos" key={logo.name}>
               <a href={logo.href} target="_blank" rel="noreferrer">
                 <img
                   src={logo.name}

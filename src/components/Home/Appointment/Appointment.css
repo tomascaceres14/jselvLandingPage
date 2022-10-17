@@ -32,6 +32,16 @@
   background: #ef8088;
 }
 
+.submit-bttn-invert {
+  background-color: black;
+  color: #f14d59;
+}
+
+.submit-bttn-invert:hover {
+  background-color: rgb(30, 30, 30);
+}
+
+
 .submit-logo {
   color: black;
 }

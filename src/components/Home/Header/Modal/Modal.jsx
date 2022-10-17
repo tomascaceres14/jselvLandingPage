@@ -21,7 +21,15 @@ export default function BasicModal() {
 
   return (
     <div>
-      <Button onClick={handleOpen} sx={{ color: "white" }}>
+      <Button
+        onClick={handleOpen}
+        sx={{
+          backgroundColor: "black",
+          color: "white",
+          borderBottom: "1px solid #f14d59",
+          borderRadius: "0px",
+        }}
+      >
         Iniciar Sesion
       </Button>
       <Modal
@@ -31,7 +39,9 @@ export default function BasicModal() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style} className="modal-box">
-          <button className="close-popup" onClick={handleClose}>x</button>
+          <button className="close-popup" onClick={handleClose}>
+            x
+          </button>
           <Validations />
         </Box>
       </Modal>

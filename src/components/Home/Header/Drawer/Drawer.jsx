@@ -13,10 +13,10 @@ import SobreMiIcon from "@mui/icons-material/Javascript";
 import TurnoIcon from "@mui/icons-material/HourglassTop";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import LoginIcon from "@mui/icons-material/Login";
-import RegisterIcon from "@mui/icons-material/Create";
+import Modal from "../Modal/Modal";
+
 import MenuIcon from "@mui/icons-material/Menu";
 import "./Drawer.css";
-import { Link } from "react-router-dom";
 
 const icons = [
   { title: "Inicio", icon: InicioIcon, href: "#" },
@@ -27,12 +27,12 @@ const icons = [
 
     href: "#faq",
   },
-  { title: "Saca un turno!", icon: TurnoIcon, route: "/reserva", href: "#appointment" },
-];
-
-const segundoMenu = [
-  { title: "Registrarse", icon: RegisterIcon, route: "/register" },
-  { title: "Iniciar sesión", icon: LoginIcon, route: "/login" },
+  {
+    title: "Saca un turno!",
+    icon: TurnoIcon,
+    route: "/reserva",
+    href: "#appointment",
+  },
 ];
 
 export default function TemporaryDrawer() {
@@ -66,34 +66,34 @@ export default function TemporaryDrawer() {
       <List>
         {icons.map((icon) => (
           <a to={icon.route} key={icon.title} href={icon.href}>
-              <ListItem disablePadding>
-                <ListItemButton>
-                  <ListItemIcon sx={{ color: "#f14d59" }}>
-                    <icon.icon />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary={icon.title}
-                    sx={{ color: "#f14d59", fontWeight: "700" }}
-                  />
-                </ListItemButton>
-              </ListItem>
-          </a>
-        ))}
-      </List>
-      <Divider sx={{ backgroundColor: "#f14d5848" }} />
-      <List>
-        {segundoMenu.map((icon) => (
-          <Link to={icon.route} key={icon.title}>
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon sx={{ color: "#f14d59" }}>
                   <icon.icon />
                 </ListItemIcon>
-                <ListItemText primary={icon.title} sx={{ color: "#f14d59" }} />
+                <ListItemText
+                  primary={icon.title}
+                  sx={{ color: "#f14d59", fontWeight: "700" }}
+                />
               </ListItemButton>
             </ListItem>
-          </Link>
+          </a>
         ))}
+      </List>
+      <Divider sx={{ backgroundColor: "lightgrey" }} />
+      <List>
+        <ListItem disablePadding>
+          <ListItemButton>
+            {/* <ListItemIcon sx={{ color: "#f14d59" }}>
+              <LoginIcon />
+            </ListItemIcon>
+            <ListItemText
+              primary={"Iniciar sesión"}
+              sx={{ color: "#f14d59" }}
+            /> */}
+            <Modal />
+          </ListItemButton>
+        </ListItem>
       </List>
     </Box>
   );
@@ -107,7 +107,7 @@ export default function TemporaryDrawer() {
         <Drawer
           anchor={"left"}
           open={state["left"]}
-          onClose={toggleDrawer("left", false)}
+          onClose={toggleDrawer("left", true)}
         >
           {list("left")}
         </Drawer>

@@ -133,17 +133,7 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <IconButton sx={{ p: 0 }}>
               <div className="header-button">
-                <Button
-                  variant="text"
-                  sx={{
-                    backgroundColor: "black",
-                    color: "white",
-                    borderBottom: "1px solid #f14d59",
-                    borderRadius: "0px",
-                  }}
-                >
-                  <BasicModal />
-                </Button>
+                <BasicModal />
               </div>
             </IconButton>
           </Box>

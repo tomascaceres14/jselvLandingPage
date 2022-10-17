@@ -5,15 +5,6 @@
   padding: 1rem;
 }
 
-.toggle {
-  background-color: black;
-  color: #f14d59;
-}
-
-.toggle:hover {
-  background-color: rgb(30, 30, 30);
-}
-
 .hr-validations {
   width: 70%;
 }

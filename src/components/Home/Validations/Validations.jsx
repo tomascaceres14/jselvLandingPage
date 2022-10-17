@@ -6,7 +6,7 @@ const Validations = () => {
   const [toggle, setToggle] = React.useState(false);
 
   const toggleBttn = (
-    <button className="submit-bttn toggle" onClick={() => setToggle(!toggle)}>
+    <button className="submit-bttn submit-bttn-invert" onClick={() => setToggle(!toggle)}>
       <strong>{toggle ? "Registrarse" : "Iniciar Sesion"}</strong>
     </button>
   );
