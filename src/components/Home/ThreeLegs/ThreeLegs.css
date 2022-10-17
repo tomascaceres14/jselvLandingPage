@@ -6,7 +6,7 @@
   justify-content: center;
   gap: 5rem;
   padding: 3rem;
-  margin: 8rem;
+  margin: 12rem 8rem;
 }
 
 .legs {
@@ -21,8 +21,9 @@
   color: #f14d59;
 }
 
-.legs p {
+.legs h4 {
   text-align: center;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 900px) {
@@ -32,10 +33,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0rem;
+    gap: 2rem;
     padding: 0rem;
-    margin: 4rem 0rem 0rem;
-    width: 100%;
+    margin: 4rem 2rem;
   }
 
   .legs {
@@ -48,6 +48,6 @@
 
   .legs p {
     text-align: center;
-    padding: 0rem 3rem;
+    /* padding: 0rem 3rem; */
   }
 }
