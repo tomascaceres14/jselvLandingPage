@@ -7,18 +7,16 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import Drawer from "./Drawer/Drawer";
 import "./Header.css";
+import BasicModal from "./Modal/Modal";
 
 const pages = [
   { name: "Ofertas", href: "#" },
   { name: "¿Quien soy?", href: "#about" },
   { name: "Contacto", href: "#appointment" },
 ];
-
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
@@ -32,20 +30,10 @@ window.onscroll = function () {
 };
 
 const ResponsiveAppBar = () => {
-
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
-
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
   };
 
   return (
@@ -143,45 +131,21 @@ const ResponsiveAppBar = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <div className="header-button">
-                  <Button
-                    variant="text"
-                    sx={{
-                      backgroundColor: "black",
-                      color: "white",
-                      borderBottom: "1px solid #f14d59",
-                      borderRadius: "0px",
-                    }}
-                  >
-                    Iniciar Sesion
-                  </Button>
-                </div>
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+            <IconButton sx={{ p: 0 }}>
+              <div className="header-button">
+                <Button
+                  variant="text"
+                  sx={{
+                    backgroundColor: "black",
+                    color: "white",
+                    borderBottom: "1px solid #f14d59",
+                    borderRadius: "0px",
+                  }}
+                >
+                  <BasicModal />
+                </Button>
+              </div>
+            </IconButton>
           </Box>
         </Toolbar>
       </Container>
