@@ -34,6 +34,7 @@ const Register = ({ toggle }) => {
             variant="outlined"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
+            type={"email"}
             required
           />
         </div>
@@ -43,6 +44,7 @@ const Register = ({ toggle }) => {
             variant="outlined"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
+            type={"password"}
             required
           />
         </div>
@@ -52,6 +54,7 @@ const Register = ({ toggle }) => {
             variant="outlined"
             value={password2}
             onChange={(event) => setPassword2(event.target.value)}
+            type={"password"}
             required
           />
         </div>

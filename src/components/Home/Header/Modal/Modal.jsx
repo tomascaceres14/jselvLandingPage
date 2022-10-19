@@ -20,8 +20,10 @@ export default function BasicModal() {
   const handleClose = () => setOpen(false);
 
   return (
-    <div >
-      <Button className="modal-button" onClick={handleOpen} >Iniciar Sesion</Button>
+    <div>
+      <Button onClick={handleOpen}>
+        <span className="modal-button">Iniciar sesion</span>
+      </Button>
       <Modal
         open={open}
         onClose={handleClose}

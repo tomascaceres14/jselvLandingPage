@@ -14,6 +14,7 @@ const Login = ({ toggle }) => {
             variant="outlined"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
+            type={"email"}
             required
           />
         </div>
@@ -23,6 +24,7 @@ const Login = ({ toggle }) => {
             variant="outlined"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
+            type={"password"}
             required
           />
         </div>
