@@ -4,9 +4,9 @@
   grid-template-rows: 1fr;
   grid-column-gap: 3rem;
   grid-row-gap: 0px;
-  margin: 6rem 0rem;
   background: #f14d58b9;
-  padding: 1rem;
+  padding: 4rem 1rem;
+  margin-bottom: 6rem;
 }
 
 .legs {
@@ -42,8 +42,7 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    padding: 3rem 1rem;
-    margin: 4rem 0rem;
+    margin-bottom: 3rem;
   }
 
   .legs {
