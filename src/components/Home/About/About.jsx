@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section id="about" className="about">
       <h2>Sobre mi</h2>
-      <article style={{ background: "lightgrey" }}>
+      <article style={{ background: "lightgrey" }} className="about-article">
         <img
           src={require("../../../images/about-me.jpg")}
           alt="presentation img"
@@ -18,13 +18,16 @@ const About = () => {
           una buena alimentacion balanceada y saludable
         </p>
       </article>
-      <article style={{ background: "#b3b3b3" }}>
+      <article style={{ background: "#b3b3b3" }} className="about-article about-article2">
         <p>
           Actualmente estoy trabajando en Club Atlético de Rafaela, Club de
           Rugby “CRAR” y recientemente pude abrir mi propio consultorio donde
           estoy atendiendo por las tardes.
         </p>
-        <img src={require("../../../images/about-me2.jpg")}></img>
+        <img
+          src={require("../../../images/about-me2.jpg")}
+          alt="presentation img2"
+        ></img>
       </article>
     </section>
   );

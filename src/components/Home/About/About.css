@@ -29,7 +29,7 @@ h2:after {
   margin: 0rem 0rem 6rem;
 }
 
-.about article {
+.about-article {
   font-size: large;
   color: rgb(29, 29, 29);
   padding: 2rem 0rem;
@@ -72,9 +72,14 @@ h2:after {
     width: 90%;
   }
 
-  .about article {
+   .about-article {
     flex-direction: column;
+  } 
+
+  .about-article2 {
+    flex-direction: column-reverse;
   }
+
   .about p {
     width: 95%;
   }
