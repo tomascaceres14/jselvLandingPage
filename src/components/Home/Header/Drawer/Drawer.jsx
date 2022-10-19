@@ -11,8 +11,8 @@ import ListItemText from "@mui/material/ListItemText";
 import InicioIcon from "@mui/icons-material/House";
 import SobreMiIcon from "@mui/icons-material/Javascript";
 import TurnoIcon from "@mui/icons-material/HourglassTop";
-import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import LoginIcon from "@mui/icons-material/Login";
+import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import Modal from "../Modal/Modal";
 
 import MenuIcon from "@mui/icons-material/Menu";
@@ -55,47 +55,54 @@ export default function TemporaryDrawer() {
   };
 
   const list = (anchor) => (
-    <Box
-      sx={{
-        width: 250,
-      }}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <List>
-        {icons.map((icon) => (
-          <a to={icon.route} key={icon.title} href={icon.href}>
-            <ListItem disablePadding>
-              <ListItemButton>
-                <ListItemIcon sx={{ color: "#f14d59" }}>
-                  <icon.icon />
-                </ListItemIcon>
-                <ListItemText
-                  primary={icon.title}
-                  sx={{ color: "#f14d59", fontWeight: "700" }}
-                />
-              </ListItemButton>
-            </ListItem>
-          </a>
-        ))}
-      </List>
-      <Divider sx={{ backgroundColor: "lightgrey" }} />
-      <List>
-        <ListItem disablePadding>
-          <ListItemButton>
-            {/* <ListItemIcon sx={{ color: "#f14d59" }}>
-              <LoginIcon />
-            </ListItemIcon>
-            <ListItemText
-              primary={"Iniciar sesión"}
-              sx={{ color: "#f14d59" }}
-            /> */}
-            <Modal />
-          </ListItemButton>
-        </ListItem>
-      </List>
-    </Box>
+    <div>
+      <Box
+        sx={{
+          width: 250,
+        }}
+        role="presentation"
+        onClick={toggleDrawer(anchor, false)}
+        onKeyDown={toggleDrawer(anchor, false)}
+      >
+        <List>
+          {icons.map((icon) => (
+            <a to={icon.route} key={icon.title} href={icon.href}>
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemIcon sx={{ color: "#f14d59" }}>
+                    <icon.icon />
+                  </ListItemIcon>
+                  <ListItemText
+                    primary={icon.title}
+                    sx={{ color: "#f14d59", fontWeight: "700" }}
+                  />
+                </ListItemButton>
+              </ListItem>
+            </a>
+          ))}
+        </List>
+        <Divider sx={{ backgroundColor: "lightgrey" }} />
+      </Box>
+      <Box
+        sx={{
+          width: 250,
+        }}
+        role="presentation"
+        onClick={toggleDrawer(anchor, true)}
+        onKeyDown={toggleDrawer(anchor, true)}
+      >
+        <List>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon sx={{ color: "#f14d59" }}>
+                <LoginIcon />
+              </ListItemIcon>
+              <Modal />
+            </ListItemButton>
+          </ListItem>
+        </List>
+      </Box>
+    </div>
   );
 
   return (
@@ -107,7 +114,7 @@ export default function TemporaryDrawer() {
         <Drawer
           anchor={"left"}
           open={state["left"]}
-          onClose={toggleDrawer("left", true)}
+          onClose={toggleDrawer("left", false)}
         >
           {list("left")}
         </Drawer>
