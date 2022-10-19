@@ -1,14 +1,15 @@
 h2 {
   font-size: 3rem;
   color: #f14d59;
-  padding: 4rem 0rem 0rem;
+  /* padding: 4rem 0rem 0rem; */
   width: 70%;
-  margin: 0.7em auto;
+  margin: 0em auto;
   overflow: hidden;
   text-align: center;
   font-weight: 500;
   font-family: 'Style Script', cursive;
 }
+
 h2:before,
 h2:after {
   content: "";
@@ -18,30 +19,35 @@ h2:after {
   vertical-align: middle;
   border-bottom: 1px solid;
 }
+
 h2:after {
   margin: 0 -55% 0 0.5em;
 }
 
 .about{
   font-family: 'Roboto', sans-serif;
+  margin: 0rem 0rem 6rem;
 }
 
 .about article {
+  font-size: large;
   color: rgb(29, 29, 29);
+  padding: 2rem 0rem;
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 3rem;
-  align-items: center;
-  padding: 2rem 0rem;
 }
 
 .about img {
-  width: 30%;
-  border-radius: 1px;
+  width: 28%;
+  border-radius: 50px;
 }
 
 .about p {
-  width: 50%;
+  width: 40%;
+  text-align: justify;
+  margin: 0;
 }
 
 @media (max-width: 900px) {

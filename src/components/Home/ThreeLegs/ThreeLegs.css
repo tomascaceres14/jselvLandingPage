@@ -1,19 +1,26 @@
 .legs-container {
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
-  padding: 3rem;
-  margin: 10rem 8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 3rem;
+  grid-row-gap: 0px;
+  margin: 6rem 3rem;
+  background: #f14d58b9;
+  padding: 1rem;
 }
 
 .legs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 0.2fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 1rem;
+  background: white;
+}
+
+.leg-icon {
+  justify-self: center;
 }
 
 .legs h3 {

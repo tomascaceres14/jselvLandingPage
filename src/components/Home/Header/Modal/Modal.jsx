@@ -21,7 +21,7 @@ export default function BasicModal() {
 
   return (
     <div>
-      <Button onClick={handleOpen}>
+      <Button onClick={handleOpen} sx={{padding: 0}}>
         <span className="modal-button">Iniciar sesion</span>
       </Button>
       <Modal
