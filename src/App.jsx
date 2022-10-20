@@ -1,13 +1,15 @@
 import "./App.css";
-import Header from "./components/Home/Header/Header";
-// import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home/Home";
+import UserPanel from "./components/Panels/UserPanel"
 
 function App() {
   return (
     <div>
-      <Header />
-      <Home />
+      <Routes>
+        <Route path="/*" element={<Home />} /> 
+        <Route path="/user" element={<UserPanel /> }/>
+      </Routes>
     </div>
   );
 }

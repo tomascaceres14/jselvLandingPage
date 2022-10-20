@@ -9,18 +9,16 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import InicioIcon from "@mui/icons-material/House";
-import SobreMiIcon from "@mui/icons-material/Javascript";
+import Face3Icon from "@mui/icons-material/Face3";
 import TurnoIcon from "@mui/icons-material/HourglassTop";
 import LoginIcon from "@mui/icons-material/Login";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import Modal from "../Modal/Modal";
-
 import MenuIcon from "@mui/icons-material/Menu";
-import "./Drawer.css";
 
 const icons = [
   { title: "Inicio", icon: InicioIcon, href: "#" },
-  { title: "Sobre mi", icon: SobreMiIcon, href: "#about" },
+  { title: "Sobre mi", icon: Face3Icon, href: "#about" },
   {
     title: "Preguntas frecuentes",
     icon: QuestionMarkIcon,
@@ -81,7 +79,7 @@ export default function TemporaryDrawer() {
             </a>
           ))}
         </List>
-        <Divider sx={{ backgroundColor: "lightgrey" }} />
+        <Divider />
       </Box>
       <Box
         sx={{

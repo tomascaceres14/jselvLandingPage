@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import "../Validations.css";
+import { useNavigate } from "react-router-dom";
 
 const Login = ({ toggle }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
+    navigate("/user")
+  };
+
   return (
     <section id="login">
-      <form className="validation-form">
+      <form className="validation-form" onSubmit={handleSubmit}>
         <div className="form-input">
           <TextField
             label="Correo Electronico"
