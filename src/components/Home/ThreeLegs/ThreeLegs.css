@@ -4,34 +4,37 @@
   grid-template-rows: 1fr;
   grid-column-gap: 3rem;
   grid-row-gap: 0px;
-  background: #f14d58b9;
+  background: #f14d58;
   padding: 4rem 1rem;
   margin-bottom: 6rem;
 }
 
-.legs {
+.leg {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 0.2fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   padding: 1rem;
-  background: white;
-  border-radius: 30px;
+  border-left: 2px solid black;
+}
+
+.leg1 {
+  border: none;
 }
 
 .leg-icon {
   justify-self: center;
 }
 
-.legs h3 {
+.leg h3 {
   text-align: center;
-  color: #f14d59;
+  color: white;
 }
 
-.legs h4 {
+.leg p {
   text-align: center;
-  color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 
 @media (max-width: 900px) {
@@ -41,21 +44,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 0rem;
     margin-bottom: 3rem;
   }
 
-  .legs {
-    margin: 1rem;
+  .leg {
+    margin: 0rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem 1rem;
+    border-left: none;
+    border-bottom: 1px solid black;
   }
 
-  .legs p {
-    text-align: center;
-    /* padding: 0rem 3rem; */
+  .leg3 {
+    border: none;
+  }
+
+  .leg p {
+    margin: 0;
   }
 }

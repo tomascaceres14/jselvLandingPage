@@ -13,7 +13,7 @@ import "./Header.css";
 import BasicModal from "./Modal/Modal";
 
 const pages = [
-  { name: "Ofertas", href: "#" },
+  { name: "Ideales", href: "#threelegs" },
   { name: "¿Quien soy?", href: "#about" },
   { name: "Contacto", href: "#appointment" },
 ];

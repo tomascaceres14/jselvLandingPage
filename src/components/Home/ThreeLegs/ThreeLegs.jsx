@@ -26,17 +26,22 @@ const legs = [
 ];
 
 const ThreeLegs = () => {
+  let i = 1;
   return (
-    <section className="legs-container">
+    <section className="legs-container" id="threelegs">
       {legs.map((leg) => {
         return (
-          <article className="legs" key={leg.title} style={{border: ""}}>
+          <article
+            className={"leg leg" + i++}
+            key={leg.title}
+            style={{ border: "" }}
+          >
             <leg.icon
-              sx={{ fontSize: "50px", color: "gray" }}
+              sx={{ fontSize: "50px", color: "white" }}
               className="leg-icon"
             />
             <h3>{leg.title}</h3>
-            <h4>{leg.description}</h4>
+            <p>{leg.description}</p>
           </article>
         );
       })}

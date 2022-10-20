@@ -11,18 +11,16 @@ import "./Appointment.css";
 const Reserva = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
+  const [reason, setReason] = useState("");
   const [date, setDate] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault(); // prevent page refresh
 
     const newDate = date.$d.toLocaleString(); // Formatting date to "DD/MM/YYYY HH:mm"
-    const message = `Hola+Juli%21+Mi+nombre+es+${firstName}+${lastName}+y+quisiera+reservar+un+turno+para+el+${newDate}`; // Create presonalized message
+    const message = `Hola+Juli%21+Mi+nombre+es+${firstName}+${lastName}+y+quisiera+reservar+un+turno+con+fecha%3A%20+${newDate}%2E%20Motivo+de+consulta%3A%20+${reason}`; // Create presonalized message
     const URL = `https://wa.me/543492383044?text=` + message;
-
     window.open(URL, "_blank");
-    // window.location.href = "/";
   };
 
   return (
@@ -49,10 +47,10 @@ const Reserva = () => {
         </div>
         <div className="form-input">
           <TextField
-            label="Correo Electronico"
+            label="Motivo de consulta"
             variant="outlined"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
+            value={reason}
+            onChange={(event) => setReason(event.target.value)}
             required
           />
         </div>

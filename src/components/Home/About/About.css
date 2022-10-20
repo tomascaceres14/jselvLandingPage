@@ -3,12 +3,11 @@ h2 {
   color: #f14d59;
   /* padding: 4rem 0rem 0rem; */
   width: 70%;
-  margin: 0em auto;
+  margin: 6rem auto;
   overflow: hidden;
   text-align: center;
   font-weight: 500;
-  font-family: 'Style Script', cursive;
-  margin-bottom: 6rem;
+  font-family: "Style Script", cursive;
 }
 
 h2:before,
@@ -25,19 +24,24 @@ h2:after {
   margin: 0 -55% 0 0.5em;
 }
 
-.about{
-  font-family: 'Roboto', sans-serif;
+.about {
+  font-family: "Roboto", sans-serif;
   margin: 0rem 0rem 6rem;
 }
 
 .about-article {
   font-size: large;
   color: rgb(29, 29, 29);
+  background-color: rgb(245, 245, 245);
   padding: 2rem 0rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3rem;
+}
+
+.about-article2 {
+  background: rgb(240, 240, 240);
 }
 
 .about img {
@@ -73,9 +77,9 @@ h2:after {
     width: 90%;
   }
 
-   .about-article {
+  .about-article {
     flex-direction: column;
-  } 
+  }
 
   .about-article2 {
     flex-direction: column-reverse;
