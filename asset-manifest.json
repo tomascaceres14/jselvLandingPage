@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jselvWebApp/static/css/main.fbd073f0.css",
-    "main.js": "/jselvWebApp/static/js/main.ec5f4874.js",
+    "main.js": "/jselvWebApp/static/js/main.1c6c3429.js",
     "static/media/food-banner.jpg": "/jselvWebApp/static/media/food-banner.12f07e8c659578596c1c.jpg",
     "static/media/about-me2.jpg": "/jselvWebApp/static/media/about-me2.19b2169cc72c1b27d30d.jpg",
     "static/media/hero-banner.jpg": "/jselvWebApp/static/media/hero-banner.9dbabdbb6f2a67bb4792.jpg",
@@ -11,10 +11,10 @@
     "static/media/mr-logo.jpg": "/jselvWebApp/static/media/mr-logo.3be62d6d57139832bad3.jpg",
     "index.html": "/jselvWebApp/index.html",
     "main.fbd073f0.css.map": "/jselvWebApp/static/css/main.fbd073f0.css.map",
-    "main.ec5f4874.js.map": "/jselvWebApp/static/js/main.ec5f4874.js.map"
+    "main.1c6c3429.js.map": "/jselvWebApp/static/js/main.1c6c3429.js.map"
   },
   "entrypoints": [
     "static/css/main.fbd073f0.css",
-    "static/js/main.ec5f4874.js"
+    "static/js/main.1c6c3429.js"
   ]
 }
