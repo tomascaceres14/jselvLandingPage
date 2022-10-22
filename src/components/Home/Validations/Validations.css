@@ -21,7 +21,9 @@
 }
 
 .close-popup {
-  display: none;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
 }
 
 @media (max-width: 900px) {
@@ -32,10 +34,6 @@
 
   .modal-box {
     width: 100%;
-  }
-
-  .close-popup {
-    display: block;
   }
 
   .modal-button {
