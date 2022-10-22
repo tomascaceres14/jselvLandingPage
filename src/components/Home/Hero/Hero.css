@@ -10,30 +10,43 @@
   /* background: rgba(0, 0, 0, 0.3); */
   padding: 16% 0%;
   color: rgb(237, 237, 237);
+  display: flex;
+  justify-content: center;
 }
 
 .hero article div {
   backdrop-filter: blur(10px);
-  width: 100%;
+  width: 80%;
   padding-top: 1rem;
   padding-bottom: 4rem;
 }
 
 @media (max-width: 900px) {
+  .hero {
+    height: 38rem;
+  }
+
   .hero article {
-    text-align: center;
-    font-size: 32px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 40% 0%;
-    color: rgb(237, 237, 237);
+    display: inherit;
+    padding: 0;
+  }
+
+  .hero article div {
+    width: 100%;
+    padding: 0 2rem;
+    position: relative;
+    top: 15rem;
   }
 
   .hero h1 {
-    text-align: center;
-    font-size: 33px;
+    font-size: 28px;
+    margin: 0;
   }
 
-  .hero span {
-    font-size: 25px;
+  .hero p {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    line-height: 2rem;
   }
 }

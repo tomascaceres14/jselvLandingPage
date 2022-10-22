@@ -9,7 +9,7 @@ const Hero = () => {
           <h1 style={{ color: "#f14d59" }}>
             Juliana Selvaggi Nutricionista Deportiva
           </h1>
-          <span>Potenciamos tu rendimiento deportivo de manera saludable.</span>
+          <p>Potenciamos tu rendimiento deportivo de manera saludable.</p>
         </div>
       </article>
     </section>

@@ -18,13 +18,13 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 const icons = [
   { title: "Inicio", icon: InicioIcon, href: "#" },
-  { title: "Sobre mi", icon: Face3Icon, href: "#about" },
   {
-    title: "Preguntas frecuentes",
+    title: "Ideales",
     icon: QuestionMarkIcon,
 
-    href: "#faq",
+    href: "#threelegs",
   },
+  { title: "Sobre mi", icon: Face3Icon, href: "#about" },
   {
     title: "Saca un turno!",
     icon: TurnoIcon,
@@ -107,7 +107,7 @@ export default function TemporaryDrawer() {
     <nav>
       <React.Fragment key={"left"}>
         <Button onClick={toggleDrawer("left", true)}>
-          <MenuIcon sx={{ color: "white" }} />
+          <MenuIcon sx={{ color: "black" }} />
         </Button>
         <Drawer
           anchor={"left"}
