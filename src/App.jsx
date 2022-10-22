@@ -7,8 +7,8 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/*" element={<Home />} /> 
-        <Route path="/user" element={<UserPanel /> }/>
+        <Route path="/jselvWebApp" element={<Home />} /> 
+        <Route path="/jselvWebApp/user" element={<UserPanel /> }/>
       </Routes>
     </div>
   );

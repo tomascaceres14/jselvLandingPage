@@ -9,7 +9,7 @@ const Login = ({ toggle }) => {
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
-    navigate("/user")
+    navigate("/jselvWebApp/user")
   };
 
   return (

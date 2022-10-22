@@ -7,9 +7,16 @@
 .hero article {
   text-align: center;
   font-size: 32px;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 16%;
+  /* background: rgba(0, 0, 0, 0.3); */
+  padding: 16% 0%;
   color: rgb(237, 237, 237);
+}
+
+.hero article div {
+  backdrop-filter: blur(10px);
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
 }
 
 @media (max-width: 900px) {

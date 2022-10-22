@@ -18,17 +18,6 @@ const pages = [
   { name: "Contacto", href: "#appointment" },
 ];
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-7rem";
-  }
-  prevScrollpos = currentScrollPos;
-};
-
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -39,7 +28,7 @@ const ResponsiveAppBar = () => {
   return (
     <AppBar
       sx={{
-        backgroundColor: "black",
+        backgroundColor: "white",
         position: "sticky",
         top: "0px",
         transition: "top 0.3s",
