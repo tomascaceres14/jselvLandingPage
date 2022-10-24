@@ -1,8 +1,7 @@
 .brands-container {
-  background-image: url(../../../images/food-banner.jpg);
   background-position: center;
   background-size: contain;
-  background-color: black;
+  background-color: #f14d5822;
   background-attachment: fixed;
   height: 13rem;
   margin: 3rem 0px;
