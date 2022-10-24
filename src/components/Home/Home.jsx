@@ -5,7 +5,6 @@ import Appointment from "./Appointment/Appointment"
 import Brands from "./Brands/Brands";
 import ThreeLegs from "./ThreeLegs/ThreeLegs"
 import Header from "./Header/Header"
-import Map from "./Map/Map"
 
 const Home = () => {
   return (
