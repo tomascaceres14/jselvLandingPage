@@ -16,7 +16,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Face3Icon from "@mui/icons-material/Face3";
 import TurnoIcon from "@mui/icons-material/HourglassTop";
-import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
+import CheckListIcon from '@mui/icons-material/PlaylistAddCheck';
 import LogoutIcon from "@mui/icons-material/Logout";
 
 const drawerWidth = 240;
@@ -27,6 +27,12 @@ const icons = [
   {
     title: "Reservar turno",
     icon: TurnoIcon,
+    route: "/reserva",
+    href: "#appointment",
+  },
+  {
+    title: "Juli Tips",
+    icon: CheckListIcon,
     route: "/reserva",
     href: "#appointment",
   },
@@ -80,92 +86,92 @@ function ResponsiveDrawer(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-      <Box sx={{ display: "flex" }}>
-        <CssBaseline />
-        <AppBar
-          position="fixed"
+    <Box sx={{ display: "flex" }}>
+      <CssBaseline />
+      <AppBar
+        position="fixed"
+        sx={{
+          width: { sm: `calc(100% - ${drawerWidth}px)` },
+          ml: { sm: `${drawerWidth}px` },
+          backgroundColor: "#f14d59",
+        }}
+      >
+        <Toolbar>
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="start"
+            onClick={handleDrawerToggle}
+            sx={{ mr: 2, display: { sm: "none" } }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" noWrap component="div">
+            Bienvenido Usuario!
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <Box
+        component="nav"
+        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+        aria-label="mailbox folders"
+      >
+        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+        <Drawer
+          container={container}
+          variant="temporary"
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{
+            keepMounted: true, // Better open performance on mobile.
+          }}
           sx={{
-            width: { sm: `calc(100% - ${drawerWidth}px)` },
-            ml: { sm: `${drawerWidth}px` },
-            backgroundColor: "#f14d59",
+            display: { xs: "block", sm: "none" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
           }}
         >
-          <Toolbar>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" } }}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" noWrap component="div">
-              Bienvenido Usuario!
-            </Typography>
-          </Toolbar>
-        </AppBar>
-        <Box
-          component="nav"
-          sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
-          aria-label="mailbox folders"
-        >
-          {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-          <Drawer
-            container={container}
-            variant="temporary"
-            open={mobileOpen}
-            onClose={handleDrawerToggle}
-            ModalProps={{
-              keepMounted: true, // Better open performance on mobile.
-            }}
-            sx={{
-              display: { xs: "block", sm: "none" },
-              "& .MuiDrawer-paper": {
-                boxSizing: "border-box",
-                width: drawerWidth,
-              },
-            }}
-          >
-            {drawer}
-          </Drawer>
-          <Drawer
-            variant="permanent"
-            sx={{
-              display: { xs: "none", sm: "block" },
-              "& .MuiDrawer-paper": {
-                boxSizing: "border-box",
-                width: drawerWidth,
-              },
-            }}
-            open
-          >
-            {drawer}
-          </Drawer>
-        </Box>
-        <Box
-          component="main"
+          {drawer}
+        </Drawer>
+        <Drawer
+          variant="permanent"
           sx={{
-            flexGrow: 1,
-            p: 3,
-            width: { sm: `calc(100% - ${drawerWidth}px)` },
+            display: { xs: "none", sm: "block" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
           }}
+          open
         >
-          <Toolbar />
-          <Typography paragraph>
-            El motivo de este menu es que el usuario pueda visualizar los planes
-            alimenticios asignados a el.
-          </Typography>
-          <Typography paragraph>
-            Todavia falta definir bien como se visualizara el plan y que va a
-            contener cada uno. Para eso es necesario que la profesional en la
-            cual se inspiro esta pagina web se organice de una vez y planeemos
-            una reunion en la cual definir bien las necesidades. La perdonamos
-            porque entendemos que anda con mil cosas y es medio despistada. Pero
-            dale Juliana media pila :P
-          </Typography>
-        </Box>
+          {drawer}
+        </Drawer>
       </Box>
+      <Box
+        component="main"
+        sx={{
+          flexGrow: 1,
+          p: 3,
+          width: { sm: `calc(100% - ${drawerWidth}px)` },
+        }}
+      >
+        <Toolbar />
+        <Typography paragraph>
+          El motivo de este menu es que el usuario pueda visualizar los planes
+          alimenticios asignados a el.
+        </Typography>
+        <Typography paragraph>
+          Todavia falta definir bien como se visualizara el plan y que va a
+          contener cada uno. Para eso es necesario que la profesional en la cual
+          se inspiro esta pagina web se organice de una vez y planeemos una
+          reunion en la cual definir bien las necesidades. La perdonamos porque
+          entendemos que anda con mil cosas y es medio despistada. Pero dale
+          Juliana media pila :P
+        </Typography>
+      </Box>
+    </Box>
   );
 }
 
