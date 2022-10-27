@@ -109,7 +109,6 @@ const ResponsiveAppBar = () => {
                   color: "black",
                   display: "block",
                   borderBottom: "1px solid #f14d59",
-                  borderRadius: "0px",
                 }}
               >
                 <a href={page.href}>{page.name}</a>

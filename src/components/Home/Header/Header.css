@@ -3,7 +3,7 @@ img {
 }
 
 .logo {
-  width: 7rem;
+  width: 4rem;
   display: flex;
 }
 
@@ -37,7 +37,6 @@ a {
 .header-nav li {
   cursor: pointer;
   padding: 10px;
-  border-radius: 3px;
   transition: background-color 0.3s ease;
 }
 
