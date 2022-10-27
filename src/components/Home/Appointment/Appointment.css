@@ -2,11 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 100%;
 }
 
 .contact-container article {
   width: 40%;
   height: 35.5rem;
+  height: 100%;
 }
 
 .contact-form {

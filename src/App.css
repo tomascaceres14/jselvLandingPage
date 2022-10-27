@@ -3,3 +3,8 @@
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
 }
+
+body{
+  position: relative;
+  min-height: 100vh;
+}

@@ -32,7 +32,7 @@ const ThreeLegs = () => {
       {legs.map((leg) => {
         return (
           <article
-            className={"leg leg" + i++}
+            className={"leg"}
             key={leg.title}
             style={{ border: "" }}
           >

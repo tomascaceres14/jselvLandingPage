@@ -22,10 +22,6 @@
   backdrop-filter: blur(50px);
 }
 
-.leg1 {
-  border: none;
-}
-
 .leg-icon {
   justify-self: center;
 }
