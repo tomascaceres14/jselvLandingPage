@@ -1,6 +1,7 @@
 footer {
-  background: rgba(0, 0, 0, 0.95);
+  background: #f14d58d6;
   width: 100%;
-  margin-top: 20px;
   color: whitesmoke;
+  position: absolute;
+  bottom: 1;
 }
