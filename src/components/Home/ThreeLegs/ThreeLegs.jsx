@@ -26,7 +26,6 @@ const legs = [
 ];
 
 const ThreeLegs = () => {
-  let i = 1;
   return (
     <section className="legs-container" id="threelegs">
       {legs.map((leg) => {

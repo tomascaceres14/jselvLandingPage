@@ -44,15 +44,24 @@ h2:after {
   background: rgb(240, 240, 240);
 }
 
+.about-article-text {
+  width: 30%;
+}
+
+.about-article span {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.35);
+}
+
 .about img {
   width: 28%;
   border-radius: 50px;
 }
 
 .about p {
-  width: 40%;
   text-align: justify;
   margin: 0;
+  font-size: 120%;
 }
 
 @media (max-width: 900px) {
