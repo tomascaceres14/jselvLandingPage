@@ -28,7 +28,7 @@
 .leg-icon {
   padding: 10px;
   justify-self: center;
-  background: #000;
+  background: #f14d58d6;
   color: white;
   border-radius: 10px;
 }
@@ -36,6 +36,7 @@
 .leg h3 {
   font-size: 30px;
   margin: 1rem;
+  color: #f14d58d6;
 }
 
 .leg p {

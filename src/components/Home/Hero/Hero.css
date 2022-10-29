@@ -12,14 +12,25 @@
   color: rgb(237, 237, 237);
   display: flex;
   justify-content: center;
-  text-shadow: 0px 0px 3px black;
 }
 
 .hero article div {
-  backdrop-filter: blur(10px);
-  width: 80%;
-  padding-top: 1rem;
-  padding-bottom: 4rem;
+  /* backdrop-filter: blur(10px); */
+  background: rgba(255, 255, 255, 0.9);
+  /* border-radius: 60px; */
+  width: 100%;
+  padding: 3rem 0rem;
+}
+
+.hero article div p {
+  color: black;
+  font-size: 80%;
+  margin: 0;
+}
+
+.hero article div h1 {
+  font-size: 130%;
+  margin: 0;
 }
 
 @media (max-width: 900px) {
