@@ -31,15 +31,8 @@ const ThreeLegs = () => {
     <section className="legs-container" id="threelegs">
       {legs.map((leg) => {
         return (
-          <article
-            className={"leg"}
-            key={leg.title}
-            style={{ border: "" }}
-          >
-            <leg.icon
-              sx={{ fontSize: "50px", color: "white" }}
-              className="leg-icon"
-            />
+          <article className={"leg"} key={leg.title} style={{ border: "" }}>
+            <leg.icon sx={{ fontSize: "65px" }} className="leg-icon" />
             <h3>{leg.title}</h3>
             <p>{leg.description}</p>
           </article>
