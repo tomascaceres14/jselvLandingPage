@@ -5,7 +5,6 @@ import Appointment from "./Appointment/Appointment"
 import Brands from "./Brands/Brands";
 import ThreeLegs from "./ThreeLegs/ThreeLegs"
 import Header from "./Header/Header"
-import Footer from "./Footer/Footer";
 
 const Home = () => {
   return (
@@ -16,7 +15,6 @@ const Home = () => {
       <About />
       <Brands />
       <Appointment />
-      <Footer />
     </main>
   );
 };
