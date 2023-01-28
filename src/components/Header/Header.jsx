@@ -88,7 +88,7 @@ const ResponsiveAppBar = () => {
             }}
           >
             <img
-              src={require("../../../images/logo.png")}
+              src={require("../../images/logo.png")}
               className="logo"
               alt="logo"
             />

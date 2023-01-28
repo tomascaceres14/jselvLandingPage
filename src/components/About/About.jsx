@@ -7,7 +7,7 @@ const About = () => {
       <h2>Sobre mi</h2>
       <article className="about-article">
         <img
-          src={require("../../../images/about-me.jpg")}
+          src={require("../../images/about-me.jpg")}
           alt="presentation img"
         />
         <div className="about-article-text">
@@ -33,7 +33,7 @@ const About = () => {
           </p>
         </div>
         <img
-          src={require("../../../images/about-me2.jpg")}
+          src={require("../../images/about-me2.jpg")}
           alt="presentation img2"
         ></img>
       </article>

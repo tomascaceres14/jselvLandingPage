@@ -9,12 +9,7 @@ import Header from "./Header/Header"
 const Home = () => {
   return (
     <main>
-      <Header />
-      <Hero />
-      <ThreeLegs />
-      <About />
-      <Brands />
-      <Appointment />
+
     </main>
   );
 };

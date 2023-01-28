@@ -1,15 +1,20 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
-import Home from "./components/Home/Home";
-import UserPanel from "./components/Panels/UserPanel";
+import About from "./components/About/About";
+import Hero from "./components/Hero/Hero";
+import Appointment from "./components/Appointment/Appointment";
+import Brands from "./components/Brands/Brands";
+import ThreeLegs from "./components/ThreeLegs/ThreeLegs";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <div>
-      <Routes>
-        <Route path="/jselvWebApp" element={<Home />} />
-        <Route path="/jselvWebApp/user" element={<UserPanel />} />
-      </Routes>
+      <Header />
+      <Hero />
+      <ThreeLegs />
+      <About />
+      <Brands />
+      <Appointment />
     </div>
   );
 }
